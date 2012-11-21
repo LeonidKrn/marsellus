@@ -1,5 +1,8 @@
 require 'spec_helper'
 
 describe Marsellus do
-  pending 'test'
+  specify { Marsellus.should_not be_nil }
+  pending do
+    it { should respond_to :configure }
+  end
 end
